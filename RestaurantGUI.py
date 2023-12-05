@@ -517,8 +517,6 @@ class RestaurantManagerApp:
                                                                reservation_id_entry, customer_id_entry,
                                                                reservation_datetime_entry, table_num_entry))
 
-
-
     def make_reservation(self, reservation_tree, reservation_id, customer_id, reservation_datetime, table_num):
         query = f"""
         DO $$ 
@@ -674,7 +672,6 @@ class RestaurantManagerApp:
             event, employee_id_entry, first_name_entry, last_name_entry, role_entry, department_entry
         ))
     
-    # Modify the existing functions to include employee_id
     def add_employee(self, employee_tree, employee_id, first_name, last_name, role, department):
         query = "INSERT INTO Employee (employee_id, fName, lName, role, dept_name) VALUES (%s, %s, %s, %s, %s)"
         values = (employee_id, first_name, last_name, role, department)
@@ -769,8 +766,7 @@ class RestaurantManagerApp:
         scrollbar.grid(row=0, column=1, sticky='ns')
         ratings_tree.configure(yscrollcommand=scrollbar.set)
         self.refresh_ratings_tree(ratings_tree)
-
-
+        
     def refresh_ratings_tree(self, ratings_tree):
         ratings_tree.delete(*ratings_tree.get_children())
         query = "SELECT * FROM Ratings"
