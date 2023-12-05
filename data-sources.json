@@ -1,0 +1,47 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18b87f2980b-1c654d11b4a89b39": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"postgres-jdbc-18b87f2980b-1c654d11b4a89b39":{"postgres":{"public":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202310311956\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-18b87f2980b-1c654d11b4a89b39\"\u003e\u003centity id\u003d\"1\" name\u003d\"customer\" fq-name\u003d\"public.customer\" order\u003d\"0\" color-bg\u003d\"204,192,184\" x\u003d\"480\" y\u003d\"568\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"department\" fq-name\u003d\"public.department\" order\u003d\"1\" color-bg\u003d\"204,192,184\" x\u003d\"240\" y\u003d\"269\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"employee\" fq-name\u003d\"public.employee\" order\u003d\"2\" color-bg\u003d\"204,192,184\" x\u003d\"480\" y\u003d\"339\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"menuitem\" fq-name\u003d\"public.menuitem\" order\u003d\"3\" color-bg\u003d\"204,192,184\" x\u003d\"240\" y\u003d\"40\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"orderitems\" fq-name\u003d\"public.orderitems\" order\u003d\"4\" color-bg\u003d\"204,192,184\" x\u003d\"40\" y\u003d\"257\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"orders\" fq-name\u003d\"public.orders\" order\u003d\"5\" color-bg\u003d\"204,192,184\" x\u003d\"240\" y\u003d\"429\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"ratings\" fq-name\u003d\"public.ratings\" order\u003d\"6\" color-bg\u003d\"204,192,184\" x\u003d\"40\" y\u003d\"475\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"reservation\" fq-name\u003d\"public.reservation\" order\u003d\"7\" color-bg\u003d\"204,192,184\" x\u003d\"240\" y\u003d\"704\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"orders_customer_id_fkey\" fq-name\u003d\"public.orders.orders_customer_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"6\"/\u003e\u003crelation name\u003d\"reservation_customer_id_fkey\" fq-name\u003d\"public.reservation.reservation_customer_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"8\"/\u003e\u003crelation name\u003d\"employee_dept_name_fkey\" fq-name\u003d\"public.employee.employee_dept_name_fkey\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"department_dept_head_fkey\" fq-name\u003d\"public.department.department_dept_head_fkey\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"orders_chef_employee_id_fkey\" fq-name\u003d\"public.orders.orders_chef_employee_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"6\"/\u003e\u003crelation name\u003d\"orders_waiter_employee_id_fkey\" fq-name\u003d\"public.orders.orders_waiter_employee_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"6\"/\u003e\u003crelation name\u003d\"orderitems_menu_item_id_fkey\" fq-name\u003d\"public.orderitems.orderitems_menu_item_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"orderitems_order_id_fkey\" fq-name\u003d\"public.orderitems.orderitems_order_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"ratings_order_id_fkey\" fq-name\u003d\"public.ratings.ratings_order_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"7\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}},":customer":{"properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202310312020\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-18b87f2980b-1c654d11b4a89b39\"\u003e\u003centity id\u003d\"1\" name\u003d\"customer\" fq-name\u003d\"public.customer\" order\u003d\"0\" color-bg\u003d\"255,128,64\" x\u003d\"280\" y\u003d\"137\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"reservation\" fq-name\u003d\"public.reservation\" order\u003d\"1\" x\u003d\"40\" y\u003d\"40\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"orders\" fq-name\u003d\"public.orders\" order\u003d\"2\" x\u003d\"40\" y\u003d\"246\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"postgres\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"reservation_customer_id_fkey\" fq-name\u003d\"public.reservation.reservation_customer_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"orders_customer_id_fkey\" fq-name\u003d\"public.orders.orders_customer_id_fkey\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"3\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
