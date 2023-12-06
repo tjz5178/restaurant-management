@@ -1,0 +1,19 @@
+{
+"department": [
+	{
+		"dept_name" : "Kitchen",
+		"dept_head" : 100
+	},
+	{
+		"dept_name" : "Wait Staff",
+		"dept_head" : 200
+	},
+	{
+		"dept_name" : "IT",
+		"dept_head" : 300
+	},
+	{
+		"dept_name" : "HR",
+		"dept_head" : 400
+	}
+]}

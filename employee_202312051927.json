@@ -1,0 +1,45 @@
+{
+"employee": [
+	{
+		"employee_id" : 100,
+		"fname" : "Lincoln",
+		"lname" : "Schmidt",
+		"role" : "Head Chef",
+		"dept_name" : "Kitchen"
+	},
+	{
+		"employee_id" : 300,
+		"fname" : "Jodie",
+		"lname" : "Davis",
+		"role" : "IT Head",
+		"dept_name" : "IT"
+	},
+	{
+		"employee_id" : 400,
+		"fname" : "Harry",
+		"lname" : "Myers",
+		"role" : "HR Head",
+		"dept_name" : "HR"
+	},
+	{
+		"employee_id" : 101,
+		"fname" : "John",
+		"lname" : "Smith",
+		"role" : "Chef",
+		"dept_name" : "Kitchen"
+	},
+	{
+		"employee_id" : 201,
+		"fname" : "Joe",
+		"lname" : "Browny",
+		"role" : "Waiter",
+		"dept_name" : "Wait Staff"
+	},
+	{
+		"employee_id" : 200,
+		"fname" : "Alice",
+		"lname" : "Gold",
+		"role" : "Wait Staff Manager",
+		"dept_name" : "Wait Staff"
+	}
+]}

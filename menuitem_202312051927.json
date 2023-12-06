@@ -1,0 +1,31 @@
+{
+"menuitem": [
+	{
+		"menu_item_id" : 2000,
+		"item_name" : "Sprite",
+		"description" : "fizzy",
+		"category" : "Drink",
+		"price" : 2.99
+	},
+	{
+		"menu_item_id" : 1001,
+		"item_name" : "Pasta",
+		"description" : "tasty!",
+		"category" : "Entree",
+		"price" : 10.99
+	},
+	{
+		"menu_item_id" : 1000,
+		"item_name" : "Burger",
+		"description" : "yummy!",
+		"category" : "Entree",
+		"price" : 9.99
+	},
+	{
+		"menu_item_id" : 2001,
+		"item_name" : "Pepsi",
+		"description" : "sweet",
+		"category" : "Drink",
+		"price" : 2.99
+	}
+]}

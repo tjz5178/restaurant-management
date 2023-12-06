@@ -1,0 +1,57 @@
+{
+"orders": [
+	{
+		"order_id" : 100,
+		"customer_id" : 1000,
+		"order_datetime" : "2023-12-31T20:30:00.000Z",
+		"order_type" : "takeout",
+		"total_amount" : 50.0,
+		"chef_employee_id" : 100,
+		"waiter_employee_id" : 200
+	},
+	{
+		"order_id" : 1,
+		"customer_id" : 1000,
+		"order_datetime" : "2023-12-05T17:30:00.000Z",
+		"order_type" : "dine-in",
+		"total_amount" : 50.0,
+		"chef_employee_id" : 100,
+		"waiter_employee_id" : 200
+	},
+	{
+		"order_id" : 2,
+		"customer_id" : 1001,
+		"order_datetime" : "2023-12-05T23:45:00.000Z",
+		"order_type" : "takeout",
+		"total_amount" : 35.5,
+		"chef_employee_id" : 100,
+		"waiter_employee_id" : 201
+	},
+	{
+		"order_id" : 3,
+		"customer_id" : 1002,
+		"order_datetime" : "2023-12-07T00:15:00.000Z",
+		"order_type" : "delivery",
+		"total_amount" : 75.2,
+		"chef_employee_id" : 101,
+		"waiter_employee_id" : 200
+	},
+	{
+		"order_id" : 4,
+		"customer_id" : 1000,
+		"order_datetime" : "2023-12-08T01:00:00.000Z",
+		"order_type" : "dine-in",
+		"total_amount" : 60.8,
+		"chef_employee_id" : 101,
+		"waiter_employee_id" : 201
+	},
+	{
+		"order_id" : 5,
+		"customer_id" : 1001,
+		"order_datetime" : "2023-12-08T20:30:00.000Z",
+		"order_type" : "takeout",
+		"total_amount" : 42.9,
+		"chef_employee_id" : 101,
+		"waiter_employee_id" : 200
+	}
+]}
